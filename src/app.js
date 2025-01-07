@@ -6,9 +6,9 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function () {
-  let pronoun = ("the", "our");
-  let adj = ("great", "big");
-  let noun = ("jogger", "racoon");
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
 
   let listForLoop = ''
   for (let index = 0; index < pronoun.length; index++) {
@@ -45,7 +45,7 @@ window.onload = function () {
     adj.map((itemAdj) => {
       noun.map((itemNoun) => {
         listMap += `
-<li class="list-group-item">${itemPronoun}${itemAdj}}${itemNoun}${domain}</li>`
+<li class="list-group-item">${itemPronoun}${itemAdj}${itemNoun}${domain}</li>`
 
       })
     })
